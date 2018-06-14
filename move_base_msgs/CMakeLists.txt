@@ -6,6 +6,7 @@ find_package(catkin REQUIRED
     message_generation
     actionlib_msgs
     geometry_msgs
+    nav_msgs
 )
 
 add_action_files(
@@ -13,12 +14,14 @@ add_action_files(
     action
   FILES
     MoveBase.action
+    MoveBasePath.action
 )
 
 generate_messages(
   DEPENDENCIES
     actionlib_msgs
     geometry_msgs
+    nav_msgs
 )
 
 catkin_package(
