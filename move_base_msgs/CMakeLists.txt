@@ -14,7 +14,6 @@ add_action_files(
     action
   FILES
     MoveBase.action
-    MoveBasePath.action
 )
 
 generate_messages(

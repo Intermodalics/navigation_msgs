@@ -1,4 +1,9 @@
+# Only set either target_pose or path:
+# If a target_pose was set, plan a path to that pose using the global planner.
+# If a path is given directly, skip the global planner and follow the path directly.
+
 geometry_msgs/PoseStamped target_pose
+nav_msgs/Path path
 ---
 ---
 geometry_msgs/PoseStamped base_position
